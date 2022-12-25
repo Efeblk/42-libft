@@ -13,6 +13,18 @@
 #include <stdlib.h>
 #include "libft.h"
 
+static int	ft_numlen(int n, int base)
+{
+	int	count;
+
+	count = 0;
+	if (n <= 0)
+		++count;
+	while (n && ++count)
+		n /= base;
+	return (count);
+}
+
 char	*ft_itoa(int n)
 {
 	int			len;

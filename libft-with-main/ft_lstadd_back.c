@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-
+#include <stdio.h>
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*tmp;
@@ -21,4 +21,29 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		*lst = new;
 	else
 		tmp->next = new;
+}
+
+int main(void)
+{
+	t_list lst4;
+	lst4.content = "balik";
+	lst4.next = NULL;
+	t_list *lst3 = &lst4;
+
+	t_list lst2;
+	lst2.content = "efe";
+	lst2.next = NULL;
+	t_list *lst1 = &lst2;
+
+
+	t_list **rlst = &lst1;
+	
+
+	ft_lstadd_back(rlst, lst3);
+	while (*rlst)
+	{
+		printf("%s", (char *) (*rlst)->content);
+		*rlst = (*rlst)->next;
+	}	
+	return 0;
 }

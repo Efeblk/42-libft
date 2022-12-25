@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 t_list	*ft_lstlast(t_list *lst)
 {
@@ -20,3 +21,23 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+
+/*int main(void)
+{
+	t_list	*rtmp;
+	t_list tmp;
+	t_list tmp2;
+
+	tmp.content = "efe";
+	tmp2.content = "balik";
+
+	rtmp = &tmp;
+	tmp.next = &tmp2;
+	tmp2.next = NULL;
+	while(rtmp) 
+	{
+		printf("%s", (char *) rtmp->content);
+		rtmp = rtmp->next;
+	}
+	return 0;
+}*/

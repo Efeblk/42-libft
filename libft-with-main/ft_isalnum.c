@@ -19,6 +19,5 @@ int	ft_isalnum(int c)
 
 int main (void)
 {
-	
 	return 0;
 }

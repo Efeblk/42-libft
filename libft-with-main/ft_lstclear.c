@@ -21,3 +21,8 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = 0;
 	}
 }
+
+int main(void)
+{
+	return 0;
+}

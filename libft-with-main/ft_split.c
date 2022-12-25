@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 #include "libft.h"
+#include <stdio.h>
 
 static size_t	ft_toklen(const char *s, char c)
 {
@@ -58,4 +59,12 @@ char	**ft_split(const char *s, char c)
 	}
 	ret[i] = 0;
 	return (ret);
+}
+
+int main(void)
+{
+	char **c;
+	c = ft_split("efe balık ismet", ' ');
+	while ( *c ) printf( "%s\n", *c++ );
+	return 0;
 }

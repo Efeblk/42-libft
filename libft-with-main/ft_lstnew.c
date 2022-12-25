@@ -24,3 +24,4 @@ t_list	*ft_lstnew(void *content)
 	ret->next = 0;
 	return (ret);
 }
+
