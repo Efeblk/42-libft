@@ -42,8 +42,8 @@ int	ft_atoi(const char *str)
 	return ((int)ret);
 }
 
-int main (void)
+/*int main (void)
 {
-	printf("%d ", ft_atoi("    70       8"));	
+	printf("%d ", ft_atoi("    +-70       8"));	
 	return 0;
-}
+}*/

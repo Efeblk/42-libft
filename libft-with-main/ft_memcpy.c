@@ -25,7 +25,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (ret);
 }
 
-int main (void)
+/*int main (void)
 {
 	char efe[] = "efe balik abcd";
 	char ahmet[] = "ahmet";
@@ -35,4 +35,4 @@ int main (void)
 	printf("%s", efe);
 	
 	return 0;
-}
+}*/

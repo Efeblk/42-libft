@@ -10,6 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
@@ -22,4 +24,17 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		f(i, &s[i]);
 		++i;
 	}
+}
+
+void f(unsigned int a, char *c)
+{
+	c[0] -= 32;
+}
+
+int main(int argc, char const *argv[])
+{
+	char c[] = "efe balik";
+	ft_striteri(c, f);
+	printf("%s", c);
+	return 0;
 }

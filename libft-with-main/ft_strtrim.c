@@ -34,7 +34,6 @@ char	*ft_strtrim(const char *s1, const char *set)
 	end = start + ft_strlen(s1);
 	while (*start && ft_isset(*start, set))
 	{
-		printf("a\n");
 		++start;
 	}
 	while (start < end && ft_isset(*(end - 1), set))
@@ -45,9 +44,6 @@ char	*ft_strtrim(const char *s1, const char *set)
 
 int main (void)
 {
-	char efe[] = "efe balik";
-	char ahmet[] = "ali kelaf";
-
-	printf("%s", ft_strtrim("efe balik ", "ali kelaf"));
+	printf("%s", ft_strtrim("efebalik", ""));
 	return 0;
 }

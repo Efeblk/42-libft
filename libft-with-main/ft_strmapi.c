@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 #include "libft.h"
+#include <stdio.h>
 
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
@@ -31,4 +32,17 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	}
 	ret[i] = 0;
 	return (ret);
+}
+
+char f(unsigned int a, char c)
+{
+	c -= 32;
+	return(c);
+}
+
+int main(int argc, char const *argv[])
+{
+	
+	printf("%s", ft_strmapi("efe balik", f));
+	return 0;
 }

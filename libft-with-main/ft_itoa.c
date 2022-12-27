@@ -12,6 +12,7 @@
 
 #include <stdlib.h>
 #include "libft.h"
+#include <stdio.h>
 
 static int	ft_numlen(int n, int base)
 {
@@ -49,4 +50,11 @@ char	*ft_itoa(int n)
 		n /= 10;
 	}
 	return (ret);
+}
+
+int main(int argc, char const *argv[])
+{
+	int i = 87897;
+	printf("%s", ft_itoa(i));	
+	return 0;
 }
